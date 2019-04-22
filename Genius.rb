@@ -31,9 +31,19 @@ foo
 bar
 =end
 
+=begin
+
 # Test 3
 puts "Initialization"
 
 BEGIN {
   puts "Declaration"
+}
+=end
+
+# Test 4
+puts "Declaration"
+
+END {
+  puts "Initialization"
 }
